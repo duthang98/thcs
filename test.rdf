@@ -1,117 +1,119 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:post.1="https://www.facebook.com/dth512/post/1219190242356755#"
     xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
-    xmlns:j.0="https://www.facebook.com#"
-    xmlns:j.1="http://xmlns.com/foaf/0.1/">
-  <j.1:Person rdf:about="https://www.facebook.com/dth512">
-    <j.1:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
-    <j.1:mbox rdf:resource="mailto:duthang98@gmail.com"/>
-    <j.1:made>
-      <rdf:Description rdf:about="https://www.facebook.com/photo.php?fbid=a">
-        <vcard:PRODID>a</vcard:PRODID>
-        <j.1:maker rdf:resource="https://www.facebook.com/dth512"/>
-        <j.0:value>Day la status a</j.0:value>
-        <j.0:location rdf:parseType="Resource">
-          <vcard:GEO rdf:resource="geo:21.062561, 102.797786"/>
-        </j.0:location>
-        <j.0:tag>
-          <j.1:Person rdf:about="https://www.facebook.com/friend-1">
-            <j.1:name rdf:parseType="Resource">
-              <j.1:firstName>Mot</j.1:firstName>
-              <j.1:givenName rdf:parseType="Resource">
-                <j.1:lastName>Nguyen</j.1:lastName>
-                <j.1:familyName>Van</j.1:familyName>
-              </j.1:givenName>
-            </j.1:name>
-            <j.1:age>22</j.1:age>
-            <j.1:phone>00999000990</j.1:phone>
-            <j.1:nick>NVM</j.1:nick>
-            <j.1:gender>Male</j.1:gender>
-            <j.1:based_near rdf:parseType="Resource">
-              <vcard:GEO rdf:resource="geo:21.062561, 105.797786"/>
-            </j.1:based_near>
-            <j.1:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
-            <j.1:mbox rdf:resource="mailto:nvm@gmail.com"/>
-          </j.1:Person>
-        </j.0:tag>
+    xmlns:post.2="https://www.facebook.com/dth512/post/1219190241756755#"
+    xmlns:post.3="https://www.facebook.com/dth512/post/1219190075090105#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <foaf:Person rdf:about="https://www.facebook.com/dth512">
+    <foaf:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
+    <foaf:mbox rdf:resource="mailto:duthang98@gmail.com"/>
+    <foaf:knows>
+      <foaf:Person rdf:about="https://www.facebook.com/truong.nexo">
+        <foaf:name rdf:parseType="Resource">
+          <foaf:firstName>Trường</foaf:firstName>
+          <foaf:givenName rdf:parseType="Resource">
+            <foaf:lastName>Nguyễn</foaf:lastName>
+            <foaf:familyName>Vân</foaf:familyName>
+          </foaf:givenName>
+        </foaf:name>
+        <foaf:age>22</foaf:age>
+        <foaf:phone>00999000990</foaf:phone>
+        <foaf:nick>nexo</foaf:nick>
+        <foaf:gender>Male</foaf:gender>
+        <foaf:based_near rdf:parseType="Resource">
+          <vcard:GEO rdf:resource="geo:20.984180, 105.854459"/>
+        </foaf:based_near>
+        <foaf:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
+        <foaf:mbox rdf:resource="mailto:nvt@gmail.com"/>
+      </foaf:Person>
+    </foaf:knows>
+    <foaf:knows>
+      <foaf:Person rdf:about="https://www.facebook.com/cong.thieu.92">
+        <foaf:name rdf:parseType="Resource">
+          <foaf:firstName>Công</foaf:firstName>
+          <foaf:givenName rdf:parseType="Resource">
+            <foaf:lastName>Thiều</foaf:lastName>
+            <foaf:familyName>Ngọc</foaf:familyName>
+          </foaf:givenName>
+        </foaf:name>
+        <foaf:age>22</foaf:age>
+        <foaf:phone>0112321123</foaf:phone>
+        <foaf:nick>TNC</foaf:nick>
+        <foaf:gender>Male</foaf:gender>
+        <foaf:based_near rdf:parseType="Resource">
+          <vcard:GEO rdf:resource="geo:20.971435, 105.792656"/>
+        </foaf:based_near>
+        <foaf:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
+        <foaf:mbox rdf:resource="mailto:tnc@gmail.com"/>
+      </foaf:Person>
+    </foaf:knows>
+    <foaf:made>
+      <rdf:Description rdf:about="https://www.facebook.com/dth512/post/1219190075090105">
+        <vcard:PRODID>1219190075090105</vcard:PRODID>
+        <foaf:maker rdf:resource="https://www.facebook.com/dth512"/>
+        <post.3:value>hi ae</post.3:value>
+        <post.3:location rdf:parseType="Resource">
+          <vcard:GEO rdf:resource="geo:21.054428, 105.811305"/>
+        </post.3:location>
+        <post.3:tag rdf:resource="https://www.facebook.com/truong.nexo"/>
       </rdf:Description>
-    </j.1:made>
-    <j.1:knows>
-      <j.1:Person rdf:about="https://www.facebook.com/friend-2">
-        <j.1:name rdf:parseType="Resource">
-          <j.1:firstName>Hai</j.1:firstName>
-          <j.1:givenName rdf:parseType="Resource">
-            <j.1:lastName>Nguyen</j.1:lastName>
-            <j.1:familyName>Van</j.1:familyName>
-          </j.1:givenName>
-        </j.1:name>
-        <j.1:age>24</j.1:age>
-        <j.1:phone>0088877662</j.1:phone>
-        <j.1:nick>NVH</j.1:nick>
-        <j.1:gender>Male</j.1:gender>
-        <j.1:based_near rdf:parseType="Resource">
-          <vcard:GEO rdf:resource="geo:21.061551, 105.797786"/>
-        </j.1:based_near>
-        <j.1:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
-        <j.1:mbox rdf:resource="mailto:nvh@gmail.com"/>
-      </j.1:Person>
-    </j.1:knows>
-    <j.1:made>
-      <rdf:Description rdf:about="https://www.facebook.com/photo.php?fbid=c">
-        <vcard:PRODID>c</vcard:PRODID>
-        <j.1:maker rdf:resource="https://www.facebook.com/dth512"/>
-        <j.0:value>Day la status a</j.0:value>
-        <j.0:location rdf:parseType="Resource">
+    </foaf:made>
+    <foaf:based_near rdf:parseType="Resource">
+      <vcard:GEO rdf:resource="geo:21.044448, 105.794018"/>
+    </foaf:based_near>
+    <foaf:made>
+      <rdf:Description rdf:about="https://www.facebook.com/dth512/post/1219190242356755">
+        <vcard:PRODID>1219190242356755</vcard:PRODID>
+        <foaf:maker rdf:resource="https://www.facebook.com/dth512"/>
+        <post.1:value>Xin chao các bạnn</post.1:value>
+        <post.1:location rdf:parseType="Resource">
           <vcard:GEO rdf:resource="geo:218.062561, 102.797786"/>
-        </j.0:location>
-        <j.0:tag rdf:resource="https://www.facebook.com/friend-2"/>
+        </post.1:location>
+        <post.1:tag>
+          <foaf:Person rdf:about="https://www.facebook.com/samnv.1998">
+            <foaf:name rdf:parseType="Resource">
+              <foaf:firstName>Sâm</foaf:firstName>
+              <foaf:givenName rdf:parseType="Resource">
+                <foaf:lastName>Nguyễn</foaf:lastName>
+                <foaf:familyName>Văn</foaf:familyName>
+              </foaf:givenName>
+            </foaf:name>
+            <foaf:age>23</foaf:age>
+            <foaf:phone>0088877662</foaf:phone>
+            <foaf:nick>NVS</foaf:nick>
+            <foaf:gender>Male</foaf:gender>
+            <foaf:based_near rdf:parseType="Resource">
+              <vcard:GEO rdf:resource="geo:20.988730, 105.778862"/>
+            </foaf:based_near>
+            <foaf:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
+            <foaf:mbox rdf:resource="mailto:nvs@gmail.com"/>
+          </foaf:Person>
+        </post.1:tag>
       </rdf:Description>
-    </j.1:made>
-    <j.1:knows>
-      <j.1:Person rdf:about="https://www.facebook.com/friend-3">
-        <j.1:name rdf:parseType="Resource">
-          <j.1:firstName>Ba</j.1:firstName>
-          <j.1:givenName rdf:parseType="Resource">
-            <j.1:lastName>Nguyen</j.1:lastName>
-            <j.1:familyName>Van</j.1:familyName>
-          </j.1:givenName>
-        </j.1:name>
-        <j.1:age>21</j.1:age>
-        <j.1:phone>0112321123</j.1:phone>
-        <j.1:nick>NVB</j.1:nick>
-        <j.1:gender>Male</j.1:gender>
-        <j.1:based_near rdf:parseType="Resource">
-          <vcard:GEO rdf:resource="geo:21.032551, 105.797786"/>
-        </j.1:based_near>
-        <j.1:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
-        <j.1:mbox rdf:resource="mailto:nvb@gmail.com"/>
-      </j.1:Person>
-    </j.1:knows>
-    <j.1:nick>Maxi</j.1:nick>
-    <j.1:knows rdf:resource="https://www.facebook.com/friend-1"/>
-    <j.1:phone>0962774423</j.1:phone>
-    <j.1:age>23</j.1:age>
-    <j.1:made>
-      <rdf:Description rdf:about="https://www.facebook.com/photo.php?fbid=b">
-        <vcard:PRODID>b</vcard:PRODID>
-        <j.1:maker rdf:resource="https://www.facebook.com/dth512"/>
-        <j.0:value>Day la status a</j.0:value>
-        <j.0:location rdf:parseType="Resource">
-          <vcard:GEO rdf:resource="geo:21.062561, 102.7913786"/>
-        </j.0:location>
-        <j.0:tag rdf:resource="https://www.facebook.com/friend-1"/>
+    </foaf:made>
+    <foaf:knows rdf:resource="https://www.facebook.com/samnv.1998"/>
+    <foaf:nick>Maxi</foaf:nick>
+    <foaf:name rdf:parseType="Resource">
+      <foaf:firstName>Thang</foaf:firstName>
+      <foaf:givenName rdf:parseType="Resource">
+        <foaf:lastName>Du</foaf:lastName>
+        <foaf:familyName>Duc</foaf:familyName>
+      </foaf:givenName>
+    </foaf:name>
+    <foaf:phone>0962774423</foaf:phone>
+    <foaf:age>23</foaf:age>
+    <foaf:gender>Male</foaf:gender>
+    <foaf:made>
+      <rdf:Description rdf:about="https://www.facebook.com/dth512/post/1219190241756755">
+        <vcard:PRODID>1219190241756755</vcard:PRODID>
+        <foaf:maker rdf:resource="https://www.facebook.com/dth512"/>
+        <post.2:value>hô nay tôi buồn •••• Ị</post.2:value>
+        <post.2:location rdf:parseType="Resource">
+          <vcard:GEO rdf:resource="geo:20.980859, 105.787993"/>
+        </post.2:location>
+        <post.2:tag rdf:resource="https://www.facebook.com/truong.nexo"/>
       </rdf:Description>
-    </j.1:made>
-    <j.1:gender>Male</j.1:gender>
-    <j.1:name rdf:parseType="Resource">
-      <j.1:firstName>Thang</j.1:firstName>
-      <j.1:givenName rdf:parseType="Resource">
-        <j.1:lastName>Du</j.1:lastName>
-        <j.1:familyName>Duc</j.1:familyName>
-      </j.1:givenName>
-    </j.1:name>
-    <j.1:based_near rdf:parseType="Resource">
-      <vcard:GEO rdf:resource="geo:21.062551, 105.797786"/>
-    </j.1:based_near>
-  </j.1:Person>
+    </foaf:made>
+  </foaf:Person>
 </rdf:RDF>

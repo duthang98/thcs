@@ -7,18 +7,48 @@ import org.apache.jena.rdf.model.Resource;
 
 public class FACEBOOK {
 
-  public static final String uri ="https://www.facebook.com";
+  public static final String uri = "https://www.facebook.com";
+  private String userId;
+  private POST post;
 
-  public static String getURI() {
-    return uri;
+  public POST getPost() {
+    return post;
   }
 
-  private static final Model m = ModelFactory.createDefaultModel();
+  public void setPost(POST post) {
+    this.post = post;
+  }
 
-  public static final Resource POST_URI = m.createResource("https://www.facebook.com/photo.php?fbid=" );
-  public static final Property POST_VALUE = m.createProperty("https://www.facebook.com#value" );
-  public static final Property POST_TAG = m.createProperty("https://www.facebook.com#tag" );
-  public static final Property POST_LOCATION = m.createProperty("https://www.facebook.com#location" );
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
+  }
+
+
+  private final Model m = ModelFactory.createDefaultModel();
+
+  public Resource getPROFILE_URI(){
+    return m.createResource(uri + "/" + this.getUserId());
+  }
+
+  public Resource getPOST_URI(){
+    return m.createResource(uri + "/" + getUserId() + "/post/" + post.getId());
+  }
+
+  public Property getPOST_VALUE(){
+    return m.createProperty(uri + "/" + getUserId() + "/post/" + post.getId() + "#value");
+  }
+
+  public Property getPOST_TAG(){
+    return m.createProperty(uri + "/" + getUserId() + "/post/" + post.getId() + "#tag");
+  }
+
+  public Property getPOST_LOCATION(){
+    return m.createProperty(uri + "/" + getUserId() + "/post/" + post.getId() + "#location");
+  }
 
 }
 
