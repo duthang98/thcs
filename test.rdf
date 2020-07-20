@@ -1,9 +1,7 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:post.1="https://www.facebook.com/dth512/post/1219190242356755#"
     xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
-    xmlns:post.2="https://www.facebook.com/dth512/post/1219190241756755#"
-    xmlns:post.3="https://www.facebook.com/dth512/post/1219190075090105#"
+    xmlns:facebook="https://www.facebook.com/dth512/post#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/">
   <foaf:Person rdf:about="https://www.facebook.com/dth512">
     <foaf:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
@@ -52,11 +50,11 @@
       <rdf:Description rdf:about="https://www.facebook.com/dth512/post/1219190075090105">
         <vcard:PRODID>1219190075090105</vcard:PRODID>
         <foaf:maker rdf:resource="https://www.facebook.com/dth512"/>
-        <post.3:value>hi ae</post.3:value>
-        <post.3:location rdf:parseType="Resource">
+        <facebook:value>hi ae</facebook:value>
+        <facebook:location rdf:parseType="Resource">
           <vcard:GEO rdf:resource="geo:21.054428, 105.811305"/>
-        </post.3:location>
-        <post.3:tag rdf:resource="https://www.facebook.com/truong.nexo"/>
+        </facebook:location>
+        <facebook:tag rdf:resource="https://www.facebook.com/truong.nexo"/>
       </rdf:Description>
     </foaf:made>
     <foaf:based_near rdf:parseType="Resource">
@@ -66,11 +64,11 @@
       <rdf:Description rdf:about="https://www.facebook.com/dth512/post/1219190242356755">
         <vcard:PRODID>1219190242356755</vcard:PRODID>
         <foaf:maker rdf:resource="https://www.facebook.com/dth512"/>
-        <post.1:value>Xin chao các bạnn</post.1:value>
-        <post.1:location rdf:parseType="Resource">
+        <facebook:value>Xin chao các bạnn</facebook:value>
+        <facebook:location rdf:parseType="Resource">
           <vcard:GEO rdf:resource="geo:218.062561, 102.797786"/>
-        </post.1:location>
-        <post.1:tag>
+        </facebook:location>
+        <facebook:tag>
           <foaf:Person rdf:about="https://www.facebook.com/samnv.1998">
             <foaf:name rdf:parseType="Resource">
               <foaf:firstName>Sâm</foaf:firstName>
@@ -89,11 +87,13 @@
             <foaf:schoolHomepage rdf:resource="https://portal.ptit.edu.vn/"/>
             <foaf:mbox rdf:resource="mailto:nvs@gmail.com"/>
           </foaf:Person>
-        </post.1:tag>
+        </facebook:tag>
       </rdf:Description>
     </foaf:made>
     <foaf:knows rdf:resource="https://www.facebook.com/samnv.1998"/>
     <foaf:nick>Maxi</foaf:nick>
+    <foaf:phone>0962774423</foaf:phone>
+    <foaf:age>23</foaf:age>
     <foaf:name rdf:parseType="Resource">
       <foaf:firstName>Thang</foaf:firstName>
       <foaf:givenName rdf:parseType="Resource">
@@ -101,18 +101,16 @@
         <foaf:familyName>Duc</foaf:familyName>
       </foaf:givenName>
     </foaf:name>
-    <foaf:phone>0962774423</foaf:phone>
-    <foaf:age>23</foaf:age>
     <foaf:gender>Male</foaf:gender>
     <foaf:made>
       <rdf:Description rdf:about="https://www.facebook.com/dth512/post/1219190241756755">
         <vcard:PRODID>1219190241756755</vcard:PRODID>
         <foaf:maker rdf:resource="https://www.facebook.com/dth512"/>
-        <post.2:value>hô nay tôi buồn •••• Ị</post.2:value>
-        <post.2:location rdf:parseType="Resource">
+        <facebook:value>hô nay tôi buồn •••• Ị</facebook:value>
+        <facebook:location rdf:parseType="Resource">
           <vcard:GEO rdf:resource="geo:20.980859, 105.787993"/>
-        </post.2:location>
-        <post.2:tag rdf:resource="https://www.facebook.com/truong.nexo"/>
+        </facebook:location>
+        <facebook:tag rdf:resource="https://www.facebook.com/truong.nexo"/>
       </rdf:Description>
     </foaf:made>
   </foaf:Person>

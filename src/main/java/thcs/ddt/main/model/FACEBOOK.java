@@ -30,24 +30,24 @@ public class FACEBOOK {
 
   private final Model m = ModelFactory.createDefaultModel();
 
-  public Resource getPROFILE_URI(){
+  public Resource getPROFILE_URI() {
     return m.createResource(uri + "/" + this.getUserId());
   }
 
-  public Resource getPOST_URI(){
+  public Resource getPOST_URI() {
     return m.createResource(uri + "/" + getUserId() + "/post/" + post.getId());
   }
 
-  public Property getPOST_VALUE(){
-    return m.createProperty(uri + "/" + getUserId() + "/post/" + post.getId() + "#value");
+  public Property getPOST_VALUE() {
+    return m.createProperty(uri + "/" + getUserId() + "/post" + "#value");
   }
 
-  public Property getPOST_TAG(){
-    return m.createProperty(uri + "/" + getUserId() + "/post/" + post.getId() + "#tag");
+  public Property getPOST_TAG() {
+    return m.createProperty(uri + "/" + getUserId() + "/post" + "#tag");
   }
 
-  public Property getPOST_LOCATION(){
-    return m.createProperty(uri + "/" + getUserId() + "/post/" + post.getId() + "#location");
+  public Property getPOST_LOCATION() {
+    return m.createProperty(uri + "/" + getUserId() + "/post" + "#location");
   }
 
 }
