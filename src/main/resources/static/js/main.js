@@ -13,12 +13,30 @@ $(document).ready(function () {
             }
         }).done(function (ketqua) {
             console.log(ketqua)
-            let data = "<tbody class=\"replace\">";
-            for (let i = 0; i < ketqua.length; i++) {
-                data += `<tr class="table__data"><td>${i + 1}</td><td>${ketqua[i].subject}</td><td>${ketqua[i].predict}</td><td>${ketqua[i].object}</td></tr>`
+            $(".table__2").replaceWith(`<div class=\"table__2\"></div>`)
+
+            $(".table__3").replaceWith(`<div class=\"table__3\"></div>`)
+            for (let j = 0; j < ketqua.length; j++) {
+                if(ketqua[j].length > 0){
+                    let data = `<div class=\"table__${j+1}\"><table class=\"table\">\n` +
+                        "      <thead>\n" +
+                        "      <tr>\n" +
+                        "        <th>index</th>\n" +
+                        "        <th>subject</th>\n" +
+                        "        <th>predict</th>\n" +
+                        "        <th>object</th>\n" +
+                        "      </tr>\n" +
+                        "      </thead>\n" +
+                        "      <tbody class=\"replace\">";
+                    for (let i = 0; i < ketqua[j].length; i++) {
+                        data += `<tr class="table__data"><td>${i + 1}</td><td>${ketqua[j][i].subject}</td><td>${ketqua[j][i].predict}</td><td>${ketqua[j][i].object}</td></tr>`
+                    }
+                    data += "</tr>\n" +
+                        "      </tbody>\n" +
+                        "    </table></div>"
+                    $(`.table__${j + 1}`).replaceWith(data)
+                }
             }
-            data += "</tbody>"
-            $(".replace").replaceWith(data)
         });
     });
     $.ajax({
@@ -29,12 +47,24 @@ $(document).ready(function () {
             "subject": "",
         }
     }).done(function (ketqua) {
-        let data = "<tbody class=\"replace\">";
-        for (let i = 0; i < ketqua.length; i++) {
-            data += `<tr class="table__data"><td>${i + 1}</td><td>${ketqua[i].subject}</td><td>${ketqua[i].predict}</td><td>${ketqua[i].object}</td></tr>`
+        let data = "<div class=\"table__1\"><table class=\"table\">\n" +
+            "      <thead>\n" +
+            "      <tr>\n" +
+            "        <th>index</th>\n" +
+            "        <th>subject</th>\n" +
+            "        <th>predict</th>\n" +
+            "        <th>object</th>\n" +
+            "      </tr>\n" +
+            "      </thead>\n" +
+            "      <tbody class=\"replace\">";
+        for (let i = 0; i < ketqua[0].length; i++) {
+            data += `<tr class="table__data"><td>${i + 1}</td><td>${ketqua[0][i].subject}</td><td>${ketqua[0][i].predict}</td><td>${ketqua[0][i].object}</td></tr>`
         }
-        data += "</tbody>"
-        $(".replace").replaceWith(data)
-        console.log(ketqua)
+        data += "</tr>\n" +
+            "      </tbody>\n" +
+            "    </table></div>"
+        $(".table__1").replaceWith(data)
+        $(".table__2").replaceWith("<div class=\"table__2\"></div>")
+        $(".table__3").replaceWith("<div class=\"table__3\"></div>")
     });
 })

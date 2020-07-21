@@ -16,7 +16,7 @@ public class MainApi {
   private StardogConnectionImpl stardogConnection = new StardogConnectionImpl();
 
   @GetMapping("/getAll")
-  List<RDFForm> getAll(@RequestParam(name = "subject") String parameter) {
+  List<List<RDFForm>> getAll(@RequestParam(name = "subject") String parameter) {
     return stardogConnection.getAll("thcs", parameter);
   }
 }
